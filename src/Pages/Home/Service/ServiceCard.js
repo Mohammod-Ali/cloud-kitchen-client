@@ -1,11 +1,14 @@
 import React from "react";
 
-const ServiceCard = ({ service }) => {
+
+
+const ServiceCard = ({ service}) => {
   const { img, title, price, description } = service;
+  console.log(service)
   return (
-    <div className="card card-compact w-96 bg-base-100 shadow-xl">
+        <div className="card card-compact w-96 bg-base-100 shadow-xl">
       <figure>
-        <img src={img} alt="Shoes" />
+        <img src={img} alt="" />
       </figure>
       <div className="card-body">
         <h2 className="card-title">{title}</h2>
