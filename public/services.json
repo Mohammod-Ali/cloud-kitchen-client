@@ -1,51 +1,44 @@
 [
-    {
-        "_id": "11111",
-        "service_id": "01",
-        "title": "Home made Biryani",
-        "img": "https://images.unsplash.com/photo-1633945274405-b6c8069047b0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-        "price": "5.00",
-        "description": "This the best food in my kitchen. It is so much healthy food. I follow the best hygienic rule while preparing this food"
-    },
-    {
-        "_id": "22222",
-        "service_id": "02",
-        "title": "Burger",
-        "img": "https://images.unsplash.com/photo-1571091718767-18b5b1457add?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80",
-        "price": "3.00",
-        "description": "This the best food in my kitchen. It is so much healthy food. I follow the best hygienic rule while preparing this food"
-    },
-    {
-        "_id": "33333",
-        "service_id": "03",
-        "title": "Chicken Fry",
-        "img": "https://images.unsplash.com/photo-1556913241-def7c10b821d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1088&q=80",
-        "price": "7.00",
-        "description": "This the best food in my kitchen. It is so much healthy food. I follow the best hygienic rule while preparing this food"
-    },
-    {
-        "_id": "44444",
-        "service_id": "04",
-        "title": "French Fry",
-        "img": "https://images.unsplash.com/photo-1541592391523-5ae8c2c88d10?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-        "price": "2.00",
-        "description": "This the best food in my kitchen. It is so much healthy food. I follow the best hygienic rule while preparing this food"
-    },
-    {
-        "_id": "55555",
-        "service_id": "05",
-        "title": "Mutton Curry",
-        "img": "https://images.unsplash.com/photo-1608684363982-d2d470f0b4bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-        "price": "3.00",
-        "description": "This the best food in my kitchen. It is so much healthy food. I follow the best hygienic rule while preparing this food"
-    },
-    {
-        "_id": "66666",
-        "service_id": "06",
-        "title": "Pizza",
-        "img": "https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-        "price": "5.00",
-        "description": "This the best food in my kitchen. It is so much healthy food. I follow the best hygienic rule while preparing this food"
-    }
-
+  {
+    "service_id": "01",
+    "title": "Home made Biryani",
+    "img": "https://images.unsplash.com/photo-1633945274405-b6c8069047b0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+    "price": "5.00",
+    "description": "This the best food in my kitchen. It is so much healthy food. I follow the best hygienic rule while preparing this food. As its name suggests, Serious Eats takes a considered approach to the art of cooking. As well as the usual selection of recipes (split into Chicken, Pizza, Cocktails, Pasta, Burgers, Sandwiches, Desserts, and Salad) it includes an extensive section on Techniques. There is an entire section of the website devoted to grilling different types of food."
+  },
+  {
+    "service_id": "02",
+    "title": "Burger",
+    "img": "https://images.unsplash.com/photo-1571091718767-18b5b1457add?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80",
+    "price": "3.00",
+    "description": "This the best food in my kitchen. It is so much healthy food. I follow the best hygienic rule while preparing this food. As its name suggests, Serious Eats takes a considered approach to the art of cooking. As well as the usual selection of recipes (split into Chicken, Pizza, Cocktails, Pasta, Burgers, Sandwiches, Desserts, and Salad) it includes an extensive section on Techniques. There is an entire section of the website devoted to grilling different types of food."
+  },
+  {
+    "service_id": "03",
+    "title": "Chicken Fry",
+    "img": "https://images.unsplash.com/photo-1556913241-def7c10b821d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1088&q=80",
+    "price": "7.00",
+    "description": "This the best food in my kitchen. It is so much healthy food. I follow the best hygienic rule while preparing this food. As its name suggests, Serious Eats takes a considered approach to the art of cooking. As well as the usual selection of recipes (split into Chicken, Pizza, Cocktails, Pasta, Burgers, Sandwiches, Desserts, and Salad) it includes an extensive section on Techniques. There is an entire section of the website devoted to grilling different types of food."
+  },
+  {
+    "service_id": "04",
+    "title": "French Fry",
+    "img": "https://images.unsplash.com/photo-1541592391523-5ae8c2c88d10?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+    "price": "2.00",
+    "description": "This the best food in my kitchen. It is so much healthy food. I follow the best hygienic rule while preparing this food. As its name suggests, Serious Eats takes a considered approach to the art of cooking. As well as the usual selection of recipes (split into Chicken, Pizza, Cocktails, Pasta, Burgers, Sandwiches, Desserts, and Salad) it includes an extensive section on Techniques. There is an entire section of the website devoted to grilling different types of food."
+  },
+  {
+    "service_id": "05",
+    "title": "Mutton Curry",
+    "img": "https://images.unsplash.com/photo-1608684363982-d2d470f0b4bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+    "price": "3.00",
+    "description": "This the best food in my kitchen. It is so much healthy food. I follow the best hygienic rule while preparing this food. As its name suggests, Serious Eats takes a considered approach to the art of cooking. As well as the usual selection of recipes (split into Chicken, Pizza, Cocktails, Pasta, Burgers, Sandwiches, Desserts, and Salad) it includes an extensive section on Techniques. There is an entire section of the website devoted to grilling different types of food."
+  },
+  {
+    "service_id": "06",
+    "title": "Pizza",
+    "img": "https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+    "price": "5.00",
+    "description": "This the best food in my kitchen. It is so much healthy food. I follow the best hygienic rule while preparing this food. As its name suggests, Serious Eats takes a considered approach to the art of cooking. As well as the usual selection of recipes (split into Chicken, Pizza, Cocktails, Pasta, Burgers, Sandwiches, Desserts, and Salad) it includes an extensive section on Techniques. There is an entire section of the website devoted to grilling different types of food."
+  }
 ]
