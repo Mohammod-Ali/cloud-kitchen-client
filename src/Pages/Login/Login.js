@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Login = () => {
 
@@ -15,7 +16,7 @@ const Login = () => {
            <img className="rounded mt-5 w-96" src="https://media.istockphoto.com/id/1299730469/photo/fingerprint-biometric-authentication-button-digital-security-concept.jpg?b=1&s=170667a&w=0&k=20&c=rV_58TI5CwLLQXFzj29H7X_aySxNGbBSqpRSFWNhxuQ=" alt="" />
          
         </div>
-        <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+        <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100 ">
         <h1 className="text-5xl font-bold m-4">Login now!</h1>
           <form onSubmit={handleLogin} className="card-body">
             <div className="form-control">
@@ -52,6 +53,7 @@ const Login = () => {
               
             </div>
           </form>
+          <p className="my-5 mx-auto">New to Cloud Kitchen <Link className="text-blue-600 font-bold" to='/signup'>Sign Up</Link></p>
         </div>
       </div>
     </div>
