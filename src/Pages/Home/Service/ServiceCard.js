@@ -12,7 +12,7 @@ const ServiceCard = ({ service}) => {
       </figure>
       <div className="card-body">
         <h2 className="card-title">{title}</h2>
-        <p>{description}</p>
+        <p>{description.slice(0, 100)}{'...'}</p>
         <div className="card-actions justify-between">
         <h4 className="font-bold">Price: ${price}</h4>
           
