@@ -3,9 +3,13 @@ import React, { useContext } from "react";
 import { Link, useNavigate,  } from "react-router-dom";
 import { AuthContext } from "../../context/AuthProvider/AuthProvider";
 import { FaGoogle } from "react-icons/fa";
+import useTitle from "../../hooks/useTitile";
 
 const SignUp = () => {
     const {createUser, loginProvider} = useContext(AuthContext)
+  useTitle('SignUp')
+
+
     const navigate = useNavigate()
   const handleSignUn = (event) => {
     event.preventDefault();

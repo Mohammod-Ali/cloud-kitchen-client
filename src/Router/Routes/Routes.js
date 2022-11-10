@@ -31,13 +31,16 @@ const router = createBrowserRouter([
       },
       {
         path: '/myreview',
-        element: 
-          <Review></Review>
+        element: <PrivateRoute>
+           <Review></Review>
+        </PrivateRoute>
         
       },
       {
         path: '/addservice',
-        element: <AddService></AddService>
+        element: <PrivateRoute>
+          <AddService></AddService>
+        </PrivateRoute>
       },
       {
         path: "/blogs",

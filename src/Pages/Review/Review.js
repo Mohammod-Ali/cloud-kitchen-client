@@ -1,11 +1,13 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { AuthContext } from '../../context/AuthProvider/AuthProvider';
+import useTitle from '../../hooks/useTitile';
 import ReviewRow from './ReviewRow';
 
 
 const Review = () => {
     const {user} = useContext(AuthContext)
     const [reviews, setReviews] = useState([])
+    useTitle('Review')
 
      
     useEffect( () => {
@@ -53,7 +55,12 @@ const Review = () => {
 
     return (
         <div>
-            <h2 className='font-bold text-4xl m-3'>{reviews.length} Review about this food.</h2>
+            {
+                reviews.length? <h2 className='font-bold text-4xl m-3'>{reviews.length} Review about this food.</h2>
+                :
+                <h2 className='font-bold text-4xl m-3'>No Reviews were added</h2>
+            }
+            
             <div className="overflow-x-auto w-full">
   <table className="table w-full mb-5">
     <thead>
