@@ -22,25 +22,32 @@ const router = createBrowserRouter([
       {
         path: "/services",
         element: <Services></Services>,
-        loader: () => fetch("http://localhost:5000/services"),
+        loader: () =>
+          fetch("https://cloud-kitchen-server-dun.vercel.app/services"),
       },
       {
         path: "/services/:id",
         element: <ServiceDetails></ServiceDetails>,
-        loader: ({params}) => fetch(`http://localhost:5000/services/${params.id}`)
+        loader: ({ params }) =>
+          fetch(
+            `https://cloud-kitchen-server-dun.vercel.app/services/${params.id}`
+          ),
       },
       {
-        path: '/myreview',
-        element: <PrivateRoute>
-           <Review></Review>
-        </PrivateRoute>
-        
+        path: "/myreview",
+        element: (
+          <PrivateRoute>
+            <Review></Review>
+          </PrivateRoute>
+        ),
       },
       {
-        path: '/addservice',
-        element: <PrivateRoute>
-          <AddService></AddService>
-        </PrivateRoute>
+        path: "/addservice",
+        element: (
+          <PrivateRoute>
+            <AddService></AddService>
+          </PrivateRoute>
+        ),
       },
       {
         path: "/blogs",

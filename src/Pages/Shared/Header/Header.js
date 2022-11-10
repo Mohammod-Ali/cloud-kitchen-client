@@ -53,7 +53,6 @@ const Header = () => {
   </div>
   <div className="navbar-end">
  
-  <button className="btn btn-outline btn-error">Order Now</button>
 
 
   </div>
