@@ -1,9 +1,11 @@
+import { GoogleAuthProvider } from "firebase/auth";
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../context/AuthProvider/AuthProvider";
+import { FaGoogle } from "react-icons/fa";
 
 const SignUp = () => {
-    const {createUser} = useContext(AuthContext)
+    const {createUser, loginProvider} = useContext(AuthContext)
   const handleSignUn = (event) => {
     event.preventDefault();
     const form = event.target;
@@ -17,7 +19,20 @@ const SignUp = () => {
         console.log(user)
     })
     .catch(err => console.error(err))
+    form.reset()
   };
+
+  const provider = new GoogleAuthProvider()
+
+  const handleGoogleLogin = () => {
+    loginProvider(provider)
+    .then(result => {
+      const user = result.user;
+      console.log(user)
+    })
+    .catch(err => console.error(err))
+  }
+
 
   return (
     <div className="hero min-h-screen bg-base-200">
@@ -72,6 +87,8 @@ const SignUp = () => {
             <div className="form-control mt-6">
               <input className="btn btn-primary" type="submit" value="Sign Up" />
             </div>
+            <button onClick={handleGoogleLogin} className="btn btn-outline "><FaGoogle className="m-2"></FaGoogle> Sign In with Google</button>
+   
           </form>
           <p className="my-5 mx-auto">
             Already have an account, Please{" "}

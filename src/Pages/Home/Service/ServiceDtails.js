@@ -54,7 +54,7 @@ const ServiceDetails = () => {
       <p className="py-6">{description}</p>
       <br />
       <p className="font-bold text-3xl">Price: ${price}</p>
-      <button className="btn btn-primary">Get Started</button>
+      
     </div>
   </div>
 </div>
@@ -65,10 +65,10 @@ const ServiceDetails = () => {
         user?<div>
         <h2 className="text-4xl font-semibold m-4">Add a Review about {title}</h2>
         <form onSubmit={handleReview}>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-3  lg:my-5 lg:mx-5">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-3  lg:my-5 lg:mx-5 ">
         <input defaultValue={user?.name} name="name" type="text" placeholder="Name" className="input input-bordered w-full" required />
         <input name="email" type="email" defaultValue={user?.email} placeholder="Email" className="input input-bordered w-full" />
-        <input name="image" type="text" placeholder="Your Image link" className="input input-bordered w-full" required />
+        <input name="image" type="text" placeholder="Your Image link" className="input input-bordered w-full"  />
         <input name="message" type="text" placeholder="Your Review about this Food" className="input input-bordered w-full" required />
         </div>
         <input className="btn btn-accent m-5" type="submit" value='place your review' />
@@ -76,7 +76,9 @@ const ServiceDetails = () => {
         </div>  
          :
         <>
-        <Link className="text-4xl font-semibold m-4" to='/login'>Please Login to add a Review</Link>
+        
+        <Link className=" font-semibold m-5 " to='/login'><button className="btn btn-primary">Please Login to Add a Review </button></Link>
+        
         </>
     }
     
