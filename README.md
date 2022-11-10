@@ -1,10 +1,17 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project [Live site](https://cloud-kitchen-21287.web.app/).
 
 ## Available Scripts
 
-In the project directory, you can run:
+1. This project create using react.js, tailwind and daisyui and other npm package
+2. This project using firebase for authentication.
+3. You can read blogs from blogs section in this site.
+4. You can order food from this site.
+5. You can give your review
+6. you can added a service cart after login
+
+
 
 ### `npm start`
 
