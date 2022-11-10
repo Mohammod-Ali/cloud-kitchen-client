@@ -39,6 +39,7 @@ const AddService = () => {
 
   return (
     <div>
+        <h2 className="font-bolder text-4xl m-4">Please fill up this from for add a Service Cart.</h2>
       <form onSubmit={handleAddService}>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-3  lg:my-5 lg:mx-5 ">
           <input
