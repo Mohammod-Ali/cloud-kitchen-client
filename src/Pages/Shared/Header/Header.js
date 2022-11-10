@@ -3,7 +3,13 @@ import { Link } from 'react-router-dom';
 import { AuthContext } from '../../../context/AuthProvider/AuthProvider';
 
 const Header = () => {
-  const {user} = useContext(AuthContext)
+  const {user, logOut} = useContext(AuthContext)
+
+  const handleLogOut = () =>{
+    logOut()
+    .then(() => {})
+    .catch(error => console.log(error))
+  }
 
     const menuItems = <>
         <li className='font-semibold'><Link to='/'>Home</Link></li>
@@ -13,6 +19,8 @@ const Header = () => {
           user?.email ?
           <>
           <li className='font-semibold'><Link to='/myreview'>My Review</Link></li>
+          <li className='font-semibold'><Link to='/addservice'>Add service</Link></li>
+          <button onClick={handleLogOut} className='btn btn-outline'>Log Out</button>
           </>
           :
           <>
@@ -34,9 +42,9 @@ const Header = () => {
         {menuItems}
       </ul>
     </div>
-    <a className="btn btn-ghost normal-case text-xl">
+    <Link to='/' className="btn btn-ghost normal-case text-xl">
         CLOUD KITCHEN
-    </a>
+    </Link>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal p-0">

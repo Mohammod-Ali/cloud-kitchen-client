@@ -60,7 +60,9 @@ const ServiceDetails = () => {
 </div>
 {/* review input section */}
 <div>
+    <div>
     <Review></Review>
+    </div>
     {
         user?<div>
         <h2 className="text-4xl font-semibold m-4">Add a Review about {title}</h2>

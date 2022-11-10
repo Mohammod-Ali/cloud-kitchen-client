@@ -27,6 +27,30 @@ const Review = () => {
             }
         })
     }
+
+    const handleUpdate = id => {
+        fetch(`http://localhost:5000/reviews/${id}`, {
+            method: 'PATCH', 
+            headers: {
+                'content-type': 'application/json'
+            }, 
+            body: JSON.stringify({status: 'Approved'})
+        })
+        .then(res => res.json())
+        .then(data => {
+            console.log(data)
+            if(data.modifiedCount > 0){
+                const remaining = reviews.filter(rvs => rvs._id !== id)
+                const approving = reviews.find(rvs => rvs._id === id)
+                approving.status = "Approved"
+
+                const newReview = [ ...remaining, approving]
+                setReviews(newReview)
+            }
+        })
+
+    }
+
     return (
         <div>
             <h2 className='font-bold text-4xl m-3'>{reviews.length} Review about this food.</h2>
@@ -48,6 +72,7 @@ const Review = () => {
         key={review._id}
         review={review}
         handleDelete={handleDelete}
+        handleUpdate={handleUpdate}
         ></ReviewRow>)
       }
     </tbody>
