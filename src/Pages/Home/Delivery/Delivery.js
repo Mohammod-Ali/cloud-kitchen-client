@@ -1,6 +1,11 @@
 import React from "react";
+import { toast } from "react-hot-toast";
 
 const Delivery = () => {
+  const order = () => {
+    console.log('order')
+    toast('Your order will be placed very soon')
+  }
   return (
     <div>
       <div className="text-center font-bold text-4xl mt-10">
@@ -16,7 +21,7 @@ const Delivery = () => {
           <h2 className="card-title">Food Panda</h2>
           <p>If you want order food over the food panda, you can.</p>
           <div className="card-actions justify-end">
-            <button className="btn btn-secondary">Order Now</button>
+            <button onClick={order} className="btn btn-secondary">Order Now</button>
           </div>
         </div>
       </div>
@@ -28,7 +33,7 @@ const Delivery = () => {
           <h2 className="card-title">Ubar Eat</h2>
           <p>If you want order food over the Ubar Eat, you can.</p>
           <div className="card-actions justify-end">
-            <button className="btn btn-secondary">Order Now</button>
+            <button onClick={order} className="btn btn-secondary">Order Now</button>
           </div>
         </div>
       </div>
@@ -40,7 +45,7 @@ const Delivery = () => {
           <h2 className="card-title">Pathaw app</h2>
           <p>If you want order food over the Pathaw app, you can.</p>
           <div className="card-actions justify-end">
-            <button className="btn btn-secondary">Order Now</button>
+            <button onClick={order} className="btn btn-secondary">Order Now</button>
           </div>
         </div>
       </div>
