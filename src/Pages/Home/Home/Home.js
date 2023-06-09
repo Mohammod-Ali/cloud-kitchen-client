@@ -7,6 +7,8 @@ import Service from "../Service/Service";
 import ContactForm from "../ContactForm/ContactForm";
 import BestSeller from "../BestSeller/BestSeller";
 import BlackFridayOffers from "../BlackFridayOffers/BlackFridayOffers";
+import ClientReview from "../ClientReview/ClientReview";
+import UpComingFoodCard from "../UpcomigFood/UpcomingFood";
 
 const Home = () => {
   useTitle('Home')
@@ -18,6 +20,8 @@ const Home = () => {
       <BlackFridayOffers></BlackFridayOffers>
       <BestSeller></BestSeller>
       <Faq></Faq>
+      <UpComingFoodCard></UpComingFoodCard>
+      <ClientReview></ClientReview>
       <ContactForm></ContactForm>
     </div>
   );
